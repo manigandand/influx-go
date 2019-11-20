@@ -1,0 +1,8 @@
+from(bucket: "incident")
+  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)
+  |> filter(fn: (r) => r._measurement == "incident")
+  |> filter(fn: (r) => r.orgnization_id == "org5")
+  |> filter(fn: (r) => r._field == "ttr")
+  |> filter(fn: (r) => r._value > 1500 and r._value < 1600)
+  //|> sort(columns: ["_time"], desc: false)
+  //|> yield(name: "result")

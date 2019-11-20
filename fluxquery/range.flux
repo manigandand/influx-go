@@ -1,0 +1,5 @@
+from(bucket: "incident")
+  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)
+  //|> filter(fn: (r) => r.organization_id == "org5")
+  |> filter(fn: (r) => r._field == "ttr")
+  |> filter(fn: (r) => r._value > 500 and r._value < 2400)
