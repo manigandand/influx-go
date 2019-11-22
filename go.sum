@@ -65,6 +65,8 @@ github.com/pkg/errors v0.8.0/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINE
 github.com/pkg/errors v0.8.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
 github.com/pkg/term v0.0.0-20180730021639-bffc007b7fd5/go.mod h1:eCbImbZ95eXtAUIbLAuAVnBnwf83mjf6QIVH8SHYwqQ=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
+github.com/pusher/jwt-go v3.0.1+incompatible h1:bbkq+gAiivSEX0uctPDV08qGI/N30nnXZ4MqPOw2tAM=
+github.com/pusher/jwt-go v3.0.1+incompatible/go.mod h1:0G+wRQ4H7D6YyoBqpmCip5DUAXsSor8GQ8XW9G5v9d0=
 github.com/pusher/pusher-platform-go v0.0.0-20180920124841-9972b66271c7 h1:2qhbEgEXGDp1G3QXSsnSNuoW6eAvEguCX8xojEX8XuY=
 github.com/pusher/pusher-platform-go v0.0.0-20180920124841-9972b66271c7/go.mod h1:z6wK1GZlxOseRUgay39SZvYhPOjwY02iogrF+bQi1pQ=
 github.com/rogpeppe/go-internal v1.3.0/go.mod h1:M8bDsm7K2OlrFYOpmOWEs/qY81heoFRclV5y23lUDJ4=
