@@ -1,0 +1,32 @@
+[
+    {
+        "table": "0",
+        "start": "2019-11-07T21:48:01.87404Z",
+        "stop": "2019-11-22T11:48:01.87404Z",
+        "time": "2019-11-20T11:26:30.611771Z",
+        "value": 6,
+        "field": "tta",
+        "measurement": "incident-metrics",
+        "incident_id": "5dd524fc8c61caf1309984d3",
+        "orgnization_id": "5dd524fc8c61caf1309984cc",
+        "service_id": "5dd524fc8c61caf1309984cd",
+        "alert_source_id": "5dd524fc8c61caf1309984ce",
+        "status": "acknowledged",
+        "event_type": "acknowledged"
+    },
+    {
+        "table": "1",
+        "start": "2019-11-07T21:48:01.87404Z",
+        "stop": "2019-11-22T11:48:01.87404Z",
+        "time": "2019-11-20T11:32:24.611771Z",
+        "value": 360,
+        "field": "ttr",
+        "measurement": "incident-metrics",
+        "incident_id": "5dd524fc8c61caf1309984d3",
+        "orgnization_id": "5dd524fc8c61caf1309984cc",
+        "service_id": "5dd524fc8c61caf1309984cd",
+        "alert_source_id": "5dd524fc8c61caf1309984ce",
+        "status": "resolved",
+        "event_type": "resolved"
+    }
+]
