@@ -1,0 +1,12 @@
+from(bucket: "test_bucket")
+  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)
+  |> filter(fn: (r) => r._measurement == "incident-metrics")
+  |> filter(fn: (r) => r._field == "tta" or r._field == "ttr")
+
+from(bucket: "test_bucket")
+  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)
+  |> filter(fn: (r) => r._measurement == "incident-metrics")
+  //|> filter(fn: (r) => r._field == "tta" or r._field == "ttr")
+  |> filter(fn: (r) => r.incident_id == "5dd524fc8c61caf1309984cf")
+  |> sort(columns: ["_time"], desc: true)
+  |> yield(name: "result")
