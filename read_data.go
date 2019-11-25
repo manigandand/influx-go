@@ -8,6 +8,30 @@ import (
 	"github.com/influxdata/influxdb-client-go"
 )
 
+func readDataValue(client *influxdb.Client, fluxQuery string) {
+	res, err := client.QueryCSV(bg(), fluxQuery, influxOrgName)
+	if err != nil {
+		log.Fatal("Read Err: ", err)
+	}
+	if res.Err != nil {
+		log.Fatal("Read Err: ", res.Err)
+	}
+
+	var mttaMetrics mtta
+	for res.Next() {
+		// fmt.Println("Row: ", res.Row)
+		// fmt.Println("ColNames: ", res.ColNames)
+
+		if err := res.Unmarshal(&mttaMetrics); err != nil {
+			log.Fatal("Unmarshal Err: ", err)
+		}
+	}
+
+	if bytes, err := json.Marshal(mttaMetrics); err == nil {
+		fmt.Printf("%+v\n", string(bytes))
+	}
+}
+
 func readData(client *influxdb.Client, fluxQuery string) {
 	// var extern IncidentMet
 	// extern := map[string]interface{}{

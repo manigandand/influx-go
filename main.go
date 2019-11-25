@@ -29,7 +29,8 @@ func main() {
 
 	// read data
 	// readData(influx, fluxQueryAck)
-	readData(influx, fluxQueryByIncID)
+	// readData(influx, fluxQueryByIncID)
+	readDataValue(influx, fluxQueryMean)
 
 	if err := influx.Close(); err != nil {
 		log.Fatal(err)

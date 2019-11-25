@@ -2,6 +2,17 @@ package main
 
 import "time"
 
+type mtta struct {
+	Result string `json:"result,omitempty" flux:"result"`
+	Table  string `json:"table" flux:"table"`
+	// _time
+	Start time.Time `json:"start"  flux:"_start"`
+	Stop  time.Time `json:"stop" flux:"_stop"`
+
+	// _fields
+	Value interface{} `json:"value" flux:"_value"`
+}
+
 // IncidentMetric ...
 type IncidentMetric struct {
 	Result string `json:"result,omitempty" flux:"result"`
